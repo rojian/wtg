@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import priv.luojian.blog.entity.User;
-import priv.luojian.blog.service.UserService;
+import priv.luojian.wtg.entity.User;
+import priv.luojian.wtg.service.UserService;
 
 /**
  * Created by Administrator on 2017/3/15.

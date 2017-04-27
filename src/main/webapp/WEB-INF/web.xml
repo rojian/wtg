@@ -15,7 +15,7 @@
     </listener>
 
     <servlet>
-        <servlet-name>blog</servlet-name>
+        <servlet-name>wtg</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
@@ -25,8 +25,8 @@
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>blog</servlet-name>
-        <url-pattern>/blog/*</url-pattern>
+        <servlet-name>wtg</servlet-name>
+        <url-pattern>/wtg/*</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>

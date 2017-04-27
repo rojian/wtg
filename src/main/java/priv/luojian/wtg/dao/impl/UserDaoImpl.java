@@ -2,7 +2,7 @@ package priv.luojian.wtg.dao.impl;
 
 import org.springframework.stereotype.Repository;
 import priv.luojian.wtg.dao.UserDao;
-import priv.luojian.blog.entity.User;
+import priv.luojian.wtg.entity.User;
 
 /**
  * Created by Administrator on 2017/3/14.

@@ -3,7 +3,7 @@
 <tiles-definitions>
 
     <definition name="Layout" template="/WEB-INF/front/layout.jsp">
-        <put-attribute name="title" value="个人博客" />
+        <put-attribute name="title" value="五条沟--首页" />
         <put-attribute name="header" value="/WEB-INF/front/header.jsp" />
         <put-attribute name="l-content" value="/WEB-INF/front/l-content.jsp" />
         <put-attribute name="r-content" value="" />
@@ -13,8 +13,9 @@
     <!-- 主页面<先执行，布局框架> -->
     <definition name="mainView" extends="Layout">
         <put-attribute name="title" value="主页"/>
+        <put-attribute name="l-content" value="/WEB-INF/front/l-content.jsp"/>
         <put-attribute name="r-content" value="/WEB-INF/front/r-content.jsp" />
-        <put-attribute name="l-content" value="/WEB-INF/front/main.jsp"/>
+
     </definition>
     <!--具体文章-->
     <definition name="single" extends="Layout">
