@@ -14,5 +14,9 @@ public interface UserService {
      * 通过用户id获取单个用户
      */
     public User getUser(int userId);
+    /**
+     * 通过用户姓名获取单个用户
+     */
+    public User getUserByName(String userName);
 
 }

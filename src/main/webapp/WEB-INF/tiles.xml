@@ -1,36 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
-
-    <definition name="Layout" template="/WEB-INF/front/layout.jsp">
-        <put-attribute name="title" value="五条沟--首页" />
-        <put-attribute name="header" value="/WEB-INF/front/header.jsp" />
-        <put-attribute name="l-content" value="/WEB-INF/front/l-content.jsp" />
+    <!--前台模版-->
+    <definition name="Layout" template="/WEB-INF/front/layout/layout.jsp">
+        <put-attribute name="title" value="五条沟" />
+        <put-attribute name="header" value="/WEB-INF/front/layout/header.jsp" />
+        <put-attribute name="l-content" value="/WEB-INF/front/layout/l-content.jsp" />
         <put-attribute name="r-content" value="" />
-        <put-attribute name="footer" value="/WEB-INF/front/footer.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/front/layout/footer.jsp" />
     </definition>
-
-    <!-- 主页面<先执行，布局框架> -->
-    <definition name="mainView" extends="Layout">
+    <!-- 首页 -->
+    <definition name="front-layout-index" extends="Layout">
         <put-attribute name="title" value="主页"/>
-        <put-attribute name="l-content" value="/WEB-INF/front/l-content.jsp"/>
-        <put-attribute name="r-content" value="/WEB-INF/front/r-content.jsp" />
-
+        <put-attribute name="r-content" value="/WEB-INF/front/layout/r-content.jsp" />
     </definition>
-    <!--具体文章-->
-    <definition name="single" extends="Layout">
-        <put-attribute name="title" value="单一"/>
-        <put-attribute name="r-content" value="/WEB-INF/front/r-content.jsp" />
-        <put-attribute name="l-content" value="/WEB-INF/front/single.jsp"/>
+    <!--景点-->
+    <definition name="front-second-scenery" extends="Layout">
+        <put-attribute name="title" value="主页"/>
+        <put-attribute name="r-content" value="/WEB-INF/front/second/scenery.jsp" />
+    </definition>
+    <!--新闻二级界面-->
+    <definition name="front-second-news" extends="Layout">
+        <put-attribute name="title" value="主页"/>
+        <put-attribute name="r-content" value="/WEB-INF/front/second/news.jsp" />
+    </definition>
+    <!--景点-->
+    <definition name="front-three-scenicspot" extends="Layout">
+        <put-attribute name="title" value="主页"/>
+        <put-attribute name="r-content" value="/WEB-INF/front/three/scenicspot.jsp" />
     </definition>
 
-    <definition name="contact" extends="Layout">
-        <put-attribute name="title" value="联系我"/>
-        <put-attribute name="l-content" value="/WEB-INF/front/contact.jsp"/>
+    <!--登录模版-->
+    <definition name="login" template="/WEB-INF/back/loginlayout.jsp">
+        <put-attribute name="title" value="登录界面" />
+        <put-attribute name="l-content" value="" />
+    </definition>
+    <!--登录-->
+    <definition name="back-login" extends="login">
+        <put-attribute name="title" value="登录界面"/>
+        <put-attribute name="l-content" value="/WEB-INF/back/login.jsp" />
     </definition>
 
-    <definition name="about" extends="Layout">
-        <put-attribute name="title" value="联系我"/>
-        <put-attribute name="l-content" value="/WEB-INF/front/about.jsp"/>
+    <!--后台模版-->
+    <definition name="Layout2" template="/WEB-INF/back/layout/layout.jsp">
+        <put-attribute name="title" value="五条沟后台--首页" />
+        <put-attribute name="header" value="/WEB-INF/back/layout/header.jsp" />
+        <put-attribute name="l-content" value="/WEB-INF/back/layout/l-content.jsp" />
+        <put-attribute name="r-content" value="/WEB-INF/back/layout/r-content.jsp" />
+    </definition>
+
+
+    <!-- 后台首页 -->
+    <definition name="back-layout-index" extends="Layout2">
+        <put-attribute name="title" value="主页"/>
+        <put-attribute name="r-content" value="/WEB-INF/back/second/list.jsp" />
+    </definition>
+    <!-- 后台景区留言 -->
+    <definition name="back-second-list" extends="Layout2">
+        <put-attribute name="title" value="主页"/>
+        <put-attribute name="r-content" value="/WEB-INF/back/second/list.jsp" />
+    </definition>
+
+    <definition name="back-three-details" extends="Layout2">
+        <put-attribute name="title" value="主页"/>
+        <put-attribute name="r-content" value="/WEB-INF/back/three/details.jsp" />
     </definition>
 </tiles-definitions>

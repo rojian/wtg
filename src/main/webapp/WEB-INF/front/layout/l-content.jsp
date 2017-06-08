@@ -9,52 +9,36 @@
 <div class="w355">
 
     <!--========================-->
-    <div class="Lj-cost">
-        <span><img src="images/icon_01_22.jpg"/></span>
-        <div class="Lj-roll">
+    <div class="wtg-img">
+        <span><img src="/assets/img/img_01_07.jpg"/></span>
+    </div>
+    <!--========================-->
+
+    <!--========================-->
+    <div class="wtg-love">
+        <span><img src="/assets/img/img_01_09.jpg" alt="正在加载图片"></span>
+
+        <div class="wtg-trends">
             <ul>
-                <li><img src="images/icon_01_23.png"/><a href="javascript:">丽江古城维护费</a></li>
-                <li><img src="images/icon_01_23.png"/><a href="javascript:">丽江古城维护费征收的法律政策依据</a></li>
-                <li><img src="images/icon_01_23.png"/><a href="javascript:">丽江古城维护费的收费标准</a></li>
-                <li><img src="images/icon_01_23.png"/><a href="javascript:">丽江古城维护费免征对象</a></li>
-                <li><img src="images/icon_01_23.png"/><a href="javascript:">丽江古城维护费征收方式</a></li>
-                <li><img src="images/icon_01_23.png"/><a href="javascript:">丽江古城维护费的管理使用原则</a></li>
-                <li><img src="images/icon_01_23.png"/><a href="javascript:">对偷逃规避古城维护费征收的行政处罚</a></li>
-                <li><img src="images/icon_01_23.png"/><a href="javascript:">丽江古城维护费征收工作综合整治行动</a></li>
-                <li><img src="images/icon_01_23.png"/><a href="javascript:">丽江古城维护费票据抽奖办法（试行）</a></li>
-                <li><img src="images/icon_01_23.png"/><a href="javascript:">关于对《丽江古城维护费票据抽奖办法< 试行>》有关问题的解释 </a></li>
+                <li ng-repeat="article in type1"><a href="javascript:">
+                    {{article.articleContent}}</a></li>
             </ul>
         </div>
     </div>
     <!--========================-->
 
     <!--========================-->
-    <div class="Lj-img">
-        <span><img src="images/img_01_07.jpg"/></span>
-        <a href="javascript:"><img src="images/img_01_08.jpg"/></a>
+    <div class="wtg-advert">
+        <form action="save.action" method="POST">
+            <input type="hidden" name="articleTypeId" value="1">
+            <input type="hidden" name="articleTitle" value="">
+            <input type="hidden" name="articleName" value="">
+            <div>
+                <textarea name="articleContent" cols=48 rows=8 placeholder="我也来说一说！"></textarea>
+            </div>
+            <input type="submit" value="提交" style="color:#4e4d4d;">
+            <input type="reset" value="清空" style="color:#4e4d4d;">
+        </form>
     </div>
     <!--========================-->
-
-    <!--========================-->
-    <div class="Lj-love">
-        <span><img src="images/img_01_09.jpg"/></span>
-        <div class="Lj-trends">
-            <ul>
-                <li><a href="javascript:">22:16 还有两个小时就要走了，已经数不清来了多少次，每一次的感已经数不</a></li>
-                <li><a href="javascript:">22:16 还有两个小时就要走了，已经数不清来了多少次，每一次的感已经数不</a></li>
-                <li><a href="javascript:">22:16 还有两个小时就要走了，已经数不清来了多少次，每一次的感已经数不</a></li>
-                <li><a href="javascript:">22:16 还有两个小时就要走了，已经数不清来了多少次，每一次的感已经数不</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--========================-->
-
-    <!--========================-->
-    <div class="Lj-advert">
-        <a href="javascript:"><img src="images/img_01_25.jpg"/></a>
-        <a href="javascript:"><img src="images/img_01_26.jpg"/></a>
-        <a href="javascript:"><img src="images/img_01_27.jpg"/></a>
-    </div>
-    <!--========================-->
-
 </div>

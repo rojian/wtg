@@ -48,4 +48,17 @@
         <filter-name>encodingFilter</filter-name>
         <url-pattern>*</url-pattern>
     </filter-mapping>
+
+    <!--<filter>-->
+        <!--<filter-name>openSessionInView</filter-name>-->
+        <!--<filter-class>org.springframework.orm.hibernate4.support.OpenSessionInViewFilter</filter-class>-->
+        <!--&lt;!&ndash;<init-param>&ndash;&gt;-->
+            <!--&lt;!&ndash;<param-name>sessionFactoryBeanName</param-name>&ndash;&gt;-->
+            <!--&lt;!&ndash;<param-value>sf</param-value>&ndash;&gt;-->
+        <!--&lt;!&ndash;</init-param>&ndash;&gt;-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>openSessionInView</filter-name>-->
+        <!--<url-pattern>*</url-pattern>-->
+    <!--</filter-mapping>-->
 </web-app>

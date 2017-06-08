@@ -1,9 +1,6 @@
 package priv.luojian.wtg.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by Administrator on 2017/3/14.
@@ -12,8 +9,11 @@ import javax.persistence.Id;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "user_id")
     private Integer userId;
+    @Column(name = "user_name")
     private String userName;
+    @Column(name = "user_password")
     private String userPassword;
 
     public User() {

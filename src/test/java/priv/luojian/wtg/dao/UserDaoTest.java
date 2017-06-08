@@ -17,16 +17,13 @@ import priv.luojian.wtg.service.UserService;
 public class UserDaoTest {
     @Autowired
     private UserService userService;
-
     @Test
-    public void saveUserTest() {
-        User user = new User("luojian", "123");
-        userService.saveUser(user);
+    public void getUserByName() {
+        User user = userService.getUserByName("罗健");
+        Assert.assertEquals("123",user.getUserPassword());
     }
-
-    @Test
-    public void getUserTest() {
+    public void getUserById() {
         User user = userService.getUser(1);
-        Assert.assertEquals("luojian",user.getUserName());
+        Assert.assertEquals("123",user.getUserPassword());
     }
 }
