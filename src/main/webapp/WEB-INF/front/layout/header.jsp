@@ -74,21 +74,21 @@
             <div id="push4" class="protect">
                 <div class="conduct"><img src="/assets/img/img_01_03.jpg"/>
                     <div class="conduct-text">
-                        <a href="javascript:">
+                        <a href="getList.action?articleTypeId=6">
                             <div class="img"><img src="/assets/img/icon_01_15.png"/></div>
                             <span>美&nbsp;食</span></a>
-                        <a href="javascript:">
+                        <a href="getList.action?articleTypeId=5">
                             <div class="img"><img src="/assets/img/icon_01_16.png"/></div>
                             <span>住&nbsp;宿</span></a>
                         <%--<a href="javascript:"><div class="img"><img src="/assets/img/icon_01_17.png"/></div><span>酒&nbsp;吧</span></a>--%>
                         <%--<a href="javascript:"><div class="img"><img src="/assets/img/icon_01_18.png"/></div><span>音&nbsp;乐</span></a>&lt;%&ndash;&ndash;%&gt;--%>
-                        <a href="javascript:">
-                            <div class="img"><img src="/assets/img/icon_01_05.png"/></div>
-                            <span>恋在五条沟</span></a>
+                        <%--<a href="javascript:">--%>
+                            <%--<div class="img"><img src="/assets/img/icon_01_05.png"/></div>--%>
+                            <%--<span>恋在五条沟</span></a>--%>
                         <%--<a href="javascript:"><div class="img"><img src="/assets/img/icon_01_16.png"/></div><span>周边景点</span></a>--%>
-                        <a href="javascript:">
-                            <div class="img"><img src="/assets/img/icon_01_17.png"/></div>
-                            <span>小城地图</span></a>
+                        <%--<a href="javascript:">--%>
+                            <%--<div class="img"><img src="/assets/img/icon_01_17.png"/></div>--%>
+                            <%--<span>小城地图</span></a>--%>
                     </div>
                 </div>
             </div>

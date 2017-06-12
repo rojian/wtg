@@ -84,6 +84,7 @@ public class ArticleController {
         String title = "";
         page = articleService.getArticleList(page, articleType, name, title);
         model.addAttribute("page", page);
+        model.addAttribute("articleTypeId", articleTypeId);
         return about(model);
     }
 

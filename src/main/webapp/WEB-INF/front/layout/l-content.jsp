@@ -21,7 +21,7 @@
         <div class="wtg-trends">
             <ul>
                 <li ng-repeat="article in type1"><a href="javascript:">
-                    {{article.articleContent}}</a></li>
+                    {{article.articleContent}}{{article.articleDate}}</a></li>
             </ul>
         </div>
     </div>

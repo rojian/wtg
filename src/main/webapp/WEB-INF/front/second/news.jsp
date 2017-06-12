@@ -23,21 +23,39 @@
                     <span><a href="javascript:"><img src="/assets/img/img_02_01.jpg"/></a></span>
                     <dl>
                         <dt><a href="three.action?articleId=${article.articleId}">${article.articleTitle}</a></dt>
-                        <%--<dd>${article.articleContent}</dd>--%>
+                            <%--<dd>${article.articleContent}</dd>--%>
                     </dl>
                 </li>
             </c:forEach>
         </ul>
-        <div class="wtg-news-page">共6条记录 1/1页<a href="javascript:">首页</a>
-            <a href="javascript:">上一页</a>
-            <a href="javascript:">下一页</a><a href="javascript:">尾页</a>第
-            <select class="select">
-                <option>1</option>
-                <option>2</option>
+        <div class="wtg-news-page"> 共${page.totalNumber}条记录 ${page.currentPage}/${page.totalPage}页
+            <a href="getList.action?articleTypeId=${articleTypeId}&&name=${name}&&title=${title}&&currentPage=1">首页</a>
+            <c:if test="${!page.firstPage}">
+                <a href="getList.action?articleTypeId=${articleTypeId}&&name=${name}&&title=${title}&&currentPage=${page.currentPage-1}">上一页</a>
+            </c:if>
+            <c:if test="${!page.lastPage}">
+                <a href="getList.action?articleTypeId=${articleTypeId}&&name=${name}&&title=${title}&&currentPage=${page.currentPage+1}">下一页</a>
+            </c:if>
+            <a href="getList.action?articleTypeId=${articleTypeId}&&name=${name}&&title=${title}&&currentPage=${page.totalPage}">尾页</a>
+            <%--为了js能取到currentPage的值--%>
+            <input type="hidden" id="currentPage" value="${page.currentPage}">
+            第<select class="select" style="border-style: hidden">
+                <c:forEach begin="1" end="${page.totalPage}" var="v">
+                    <option value="${v}">${v}</option>
+                </c:forEach>
             </select>页
         </div>
     </div>
     <!--text end-->
-
-
 </div>
+<script>
+    $(document).ready(function () {
+        var n = $("#currentPage").val();
+        $(".select").find("option[value='" + n + "']").attr("selected", true);
+    });
+    //    实现select改变就跳转该页
+    $(".select").change(function () {
+        var m = $(".select option:selected").val();
+        window.location.href = "getList.action?articleTypeId=${articleTypeId}&&name=${name}&&title=${title}&&currentPage=" + m + "";
+    });
+</script>

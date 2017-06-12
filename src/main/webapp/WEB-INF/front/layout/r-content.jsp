@@ -9,7 +9,7 @@
 <div class="w786">
 
     <!--=================-->
-    <div class="roll-top"><span>五条沟动态</span><a href="javascript:">更多 > </a></div>
+    <div class="roll-top"><span>五条沟动态</span><a href="getList.action?articleTypeId=2">更多 > </a></div>
     <!--=================-->
 
     <!--=================-->
@@ -34,7 +34,7 @@
         <div class="manage-top">
             <div class="manage-more">
                 <span>旅游路线推荐</span>
-                <a href="javascript:">more&nbsp;></a>
+                <a href="getList.action?articleTypeId=3">more&nbsp;></a>
             </div>
         </div>
 
@@ -59,7 +59,7 @@
         <div class="stay-top">
             <div class="stay-right">
                 <span>旅游景点</span>
-                <a href="javascript:">more ></a>
+                <a href="getList.action?articleTypeId=4">more ></a>
             </div>
         </div>
         <div class="stay-text">
@@ -77,7 +77,7 @@
         <div class="stay-top">
             <div class="stay-right">
                 <span>住在五条沟</span>
-                <a href="javascript:">more ></a>
+                <a href="getList.action?articleTypeId=5">more ></a>
             </div>
         </div>
         <div class="stay-text">
@@ -94,13 +94,13 @@
         <div class="stay-top">
             <div class="stay-right">
                 <span>五条沟美食</span>
-                <a href="javascript:">more ></a>
+                <a href="getList.action?articleTypeId=6">more ></a>
             </div>
         </div>
         <div class="stay-text">
             <ul>
                 <li ng-repeat="article in type6"><a href="javascript:"><img height="100" width="150" src="/assets/img/img_01_16.jpg"></a><span><a
-                        href="getList.action?articleTypeId={{article.articleTypeId}}">{{article.articleName}}</a></span></li>
+                        href="three.action?articleId={{article.articleId}}">{{article.articleName}}</a></span></li>
             </ul>
         </div>
     </div>

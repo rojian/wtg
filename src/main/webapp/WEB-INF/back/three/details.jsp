@@ -25,28 +25,28 @@
 
             <span class="item_name" style="width:120px;">名称：</span>
             <input type="text" name="articleName" value="${article.articleName}" class="textbox textbox_295"
-                   placeholder="请输入名称"/>
+                   placeholder=""/>
             <%--<span class="errorTips">错误提示信息...</span>--%>
         </li>
         <li>
 
             <span class="item_name" style="width:120px;">标题：</span>
             <input type="text" name="articleTitle" value="${article.articleTitle}" class="textbox textbox_295"
-                   placeholder="请输入标题"/>
+                   placeholder=""/>
             <%--<span class="errorTips">错误提示信息...</span>--%>
         </li>
         <li>
 
             <span class="item_name" style="width:120px;">姓名或地址：</span>
             <input name="articleAddress" value="${article.articleAddress}" type="text" class="textbox textbox_295"
-                   placeholder="请输入姓名或地址"/>
+                   placeholder=""/>
             <%--<span class="errorTips">错误提示信息...</span>--%>
         </li>
         <li>
 
             <span class="item_name" style="width:120px;">电话：</span>
             <input name="articleTel" value="${article.articleTel}" type="text" class="textbox textbox_295"
-                   placeholder="请输入电话号码"/>
+                   placeholder=""/>
             <%--<span class="errorTips">错误提示信息...</span>--%>
         </li>
         <%--<li>--%>
